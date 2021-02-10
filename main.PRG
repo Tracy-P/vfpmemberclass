@@ -1,0 +1,1 @@
+MESSAGEBOX("This project doesn't do anything real.")
