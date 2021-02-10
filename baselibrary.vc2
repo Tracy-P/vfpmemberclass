@@ -40,10 +40,16 @@ ENDDEFINE
 DEFINE CLASS basegrid AS grid 
  	*< CLASSDATA: Baseclass="grid" Timestamp="" Scale="Pixels" Uniqueid="" />
 
+	AllowHeaderSizing = .F.
+	AllowRowSizing = .F.
+	DeleteMark = .F.
 	Height = 200
 	MemberClass = "basecolumn"
 	MemberClassLibrary = baselibrary.prg
 	Name = "basegrid"
+	PanelLink = .F.
+	RecordMark = .F.
+	SplitBar = .F.
 	Width = 320
 
 ENDDEFINE
