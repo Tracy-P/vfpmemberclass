@@ -50,11 +50,11 @@ MODIFY PROJECT 'baseLibraryTest.pjx' NOWAIT NOSHOW NOPROJECTHOOK
 loProject = _VFP.Projects('baseLibraryTest.pjx')
 
 WITH loProject.FILES
-	.ADD('baselibrary.prg')		&& *< FileMetadata: Type="P" Cpid="1252" Timestamp="0" ID="0" ObjRev="0" User="" />
-	.ADD('baselibrary.vcx')		&& *< FileMetadata: Type="V" Cpid="1252" Timestamp="0" ID="0" ObjRev="0" User="" />
-	.ADD('main.prg')		&& *< FileMetadata: Type="P" Cpid="1252" Timestamp="0" ID="0" ObjRev="0" User="" />
-	.ADD('modulelibaray.vcx')		&& *< FileMetadata: Type="V" Cpid="1252" Timestamp="0" ID="0" ObjRev="0" User="" />
-	.ADD('moduletest.scx')		&& *< FileMetadata: Type="K" Cpid="1252" Timestamp="0" ID="0" ObjRev="0" User="" />
+	.ADD('baselibrary.prg')		&& *< FileMetadata: Type="P" Cpid="1252" Timestamp="0" ID="0" ObjRev="544" User="" />
+	.ADD('baselibrary.vcx')		&& *< FileMetadata: Type="V" Cpid="1252" Timestamp="0" ID="0" ObjRev="544" User="" />
+	.ADD('main.prg')		&& *< FileMetadata: Type="P" Cpid="1252" Timestamp="0" ID="0" ObjRev="544" User="" />
+	.ADD('modulelibrary.vcx')		&& *< FileMetadata: Type="V" Cpid="1252" Timestamp="0" ID="0" ObjRev="0" User="" />
+	.ADD('moduletest.scx')		&& *< FileMetadata: Type="K" Cpid="1252" Timestamp="0" ID="0" ObjRev="544" User="" />
 	*</BuildProj>
 
 	.ITEM('__newproject.f2b').Remove()
