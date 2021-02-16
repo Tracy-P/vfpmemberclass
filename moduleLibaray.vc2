@@ -5,6 +5,43 @@
 *< FOXBIN2PRG: Version="1.19" SourceFile="modulelibaray.vcx" /> (Solo para binarios VFP 9 / Only for VFP 9 binaries)
 *
 *
+DEFINE CLASS formwithsubclass AS baseform OF "baselibrary.vcx" 
+ 	*< CLASSDATA: Baseclass="form" Timestamp="" Scale="Pixels" Uniqueid="" />
+
+	*-- OBJECTDATA items order determines ZOrder / El orden de los items OBJECTDATA determina el ZOrder 
+	*< OBJECTDATA: ObjPath="Modulegridincontainer1" UniqueID="" Timestamp="" />
+
+	DoCreate = .T.
+	Height = 267
+	Left = 0
+	Name = "formwithsubclass"
+	Top = 0
+	Width = 350
+
+	ADD OBJECT 'Modulegridincontainer1' AS modulegridincontainer WITH ;
+		Left = 0, ;
+		Name = "Modulegridincontainer1", ;
+		Top = 0, ;
+		Basegrid1.COLUMN1.Header1.Name = "Header1", ;
+		Basegrid1.COLUMN1.Name = "COLUMN1", ;
+		Basegrid1.COLUMN1.Text1.Name = "Text1", ;
+		Basegrid1.COLUMN2.Header1.Name = "Header1", ;
+		Basegrid1.COLUMN2.Name = "COLUMN2", ;
+		Basegrid1.COLUMN2.Text1.Name = "Text1", ;
+		Basegrid1.COLUMN3.Header1.Name = "Header1", ;
+		Basegrid1.COLUMN3.Name = "COLUMN3", ;
+		Basegrid1.COLUMN3.Text1.Name = "Text1", ;
+		Basegrid1.Name = "Basegrid1", ;
+		Basebutton1.Name = "Basebutton1"
+		*< END OBJECT: ClassLib="modulelibaray.vcx" BaseClass="container" />
+	
+	PROCEDURE Modulegridincontainer1.Basegrid1.COLUMN2.Text1.LostFocus
+		* sample
+		DODEFAULT()
+	ENDPROC
+
+ENDDEFINE
+
 DEFINE CLASS modulegridincontainer AS basecontainer OF "baselibrary.vcx" 
  	*< CLASSDATA: Baseclass="container" Timestamp="" Scale="Pixels" Uniqueid="" />
 
@@ -77,5 +114,11 @@ DEFINE CLASS modulegridincontainer AS basecontainer OF "baselibrary.vcx"
 		Margin = 0, ;
 		Name = "Text1"
 		*< END OBJECT: BaseClass="textbox" />
+	
+	PROCEDURE Basegrid1.Column1.Text1.Click
+		* sample
+		DODEFAULT()
+		
+	ENDPROC
 
 ENDDEFINE
