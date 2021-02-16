@@ -33,7 +33,7 @@ DEFINE CLASS formwithsubclass AS baseform OF "baselibrary.vcx"
 		Basegrid1.COLUMN3.Text1.Name = "Text1", ;
 		Basegrid1.Name = "Basegrid1", ;
 		Basebutton1.Name = "Basebutton1"
-		*< END OBJECT: ClassLib="modulelibaray.vcx" BaseClass="container" />
+		*< END OBJECT: ClassLib="modulelibrary.vcx" BaseClass="container" />
 	
 	PROCEDURE Modulegridincontainer1.Basegrid1.COLUMN2.Text1.LostFocus
 		* sample
