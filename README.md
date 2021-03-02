@@ -10,6 +10,9 @@ Examples should include
 * using a class that has a baseGrid in it on a form
 * using a class that has a baseGrid in it in a class
 
+**IMPORTANT** 
+This bit of code to process the files is more than is needed. I'll work on an adjustment later.
+
 **NOTE** each of these should have some code in at least one method
 
 The process*.prg files are the classes to update the classes and forms in the project.
