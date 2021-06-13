@@ -12,6 +12,29 @@ Examples should include
 
 **IMPORTANT** 
 This bit of code to process the files is more than is needed. I'll work on an adjustment later.
+The only thing that needs to be changed is the properties of a grid columns prefixes.
+
+```
+ColumnCount = 3
+Top = 12
+Left = 12
+Name = "Basegrid1"
+Column1.Name = "Column1"
+Column2.Name = "Column2"
+Column3.Name = "Column3"
+```
+
+becomes
+
+```
+ColumnCount = 3
+Top = 12
+Left = 12
+Name = "Basegrid1"
+basecolumn1.Name = "Column1"
+basecolumn2.Name = "Column2"
+basecolumn3.Name = "Column3"
+```
 
 **NOTE** each of these should have some code in at least one method
 
