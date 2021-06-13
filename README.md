@@ -35,8 +35,6 @@ basecolumn2.Name = "Column2"
 basecolumn3.Name = "Column3"
 ```
 
-**NOTE** each of these should have some code in at least one method
-
 The processclassbase.prg is where the base* properties need to be set.
 The process*.prg files are the classes to update the classes and forms in the project.
 Then run the processtoupdatememberclassofgrid.prg program.
