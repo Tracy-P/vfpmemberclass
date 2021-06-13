@@ -11,7 +11,6 @@ Examples should include
 * using a class that has a baseGrid in it in a class
 
 **IMPORTANT** 
-This bit of code to process the files is more than is needed. I'll work on an adjustment later.
 The only thing that needs to be changed is the properties of a grid columns prefixes.
 
 ```
@@ -38,6 +37,9 @@ basecolumn3.Name = "Column3"
 
 **NOTE** each of these should have some code in at least one method
 
+The processclassbase.prg is where the base* properties need to be set.
 The process*.prg files are the classes to update the classes and forms in the project.
-Currently the processclassbase.prg is where the base* properties need to be set.
 Then run the processtoupdatememberclassofgrid.prg program.
+
+There is code the process*.prg files that is never called. 
+Not all code in the process*.prg files have been tested at this time.
