@@ -1,0 +1,8 @@
+resource=.\resource\foxuser.dbf
+safety=off
+deleted=off
+codepage=1252
+collate=MACHINE
+title=VFP MemberClass
+command=do .\resource\startup.prg
+stacksize=32000
