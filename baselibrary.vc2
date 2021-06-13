@@ -33,6 +33,8 @@ DEFINE CLASS baseform AS form
 	Caption = "Form"
 	DataSession = 2
 	DoCreate = .T.
+	FontName = "Segoe UI"
+	FontSize = 10
 	Name = "baseform"
 
 ENDDEFINE
@@ -43,12 +45,15 @@ DEFINE CLASS basegrid AS grid
 	AllowHeaderSizing = .F.
 	AllowRowSizing = .F.
 	DeleteMark = .F.
+	FontName = "Segoe UI"
+	FontSize = 10
 	Height = 200
 	MemberClass = "basecolumn"
 	MemberClassLibrary = baselibrary.prg
 	Name = "basegrid"
 	PanelLink = .F.
 	RecordMark = .F.
+	RowHeight = 20
 	SplitBar = .F.
 	Width = 320
 
