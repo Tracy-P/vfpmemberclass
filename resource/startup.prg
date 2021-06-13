@@ -26,12 +26,12 @@ PROCEDURE LoadMenu
 	DEFINE BAR 98 OF Developer PROMPT "\-"
 	DEFINE BAR 4 OF Developer PROMPT "FoxUnit"
 	define bar 97 of Developer Prompt "\-"
-	define bar 5 of Developer prompt "Modify ProcessClassBase.prg"
-	define bar 6 of Developer prompt "Modify ProcessClassLibraryBaseGrid.prg"
-	define bar 7 of Developer prompt "Modify ProcessClassLibrarySubclassedGrid.prg"
-	define bar 8 of Developer prompt "Modify ProcessFormsBaseClass.prg"
-	define bar 9 of Developer prompt "Modify ProcessFormsSubclassedGrid.prg"
-	define bar 10 of Developer prompt "Modify ProcessToUpdateMemberClassOfGrid.prg"
+	define bar 6 of Developer prompt "Modify ProcessClassBase.prg"
+	define bar 7 of Developer prompt "Modify ProcessClassLibraryBaseGrid.prg"
+	define bar 8 of Developer prompt "Modify ProcessClassLibrarySubclassedGrid.prg"
+	define bar 9 of Developer prompt "Modify ProcessFormsBaseClass.prg"
+	define bar 10 of Developer prompt "Modify ProcessFormsSubclassedGrid.prg"
+	define bar 11 of Developer prompt "Modify ProcessToUpdateMemberClassOfGrid.prg"
 
 	ON PAD Developer OF _MSysMenu ACTIVATE POPUP Developer
 	ON SELECTION POPUP Developer DO ProcessMenuSelection in &toolIsIn.
@@ -54,17 +54,17 @@ PROCEDURE ProcessMenuSelection
 		DO BuildAndRun IN &toolIsIn.
 	CASE selectedBar = 4
 		DO c:\work\tools\foxunit
-	CASE selectedBar = 5
+	CASE selectedBar = 6
 		modify command processclassbase.prg nowait
-	case selectedBar = 6
+	case selectedBar = 7
 		modify command processclasslibrarybasegrid.prg nowait
-	case selectedBar = 7 
+	case selectedBar = 8 
 		modify command processclasslibrarysubclassedgrid.prg nowait
-	case selectedBar = 8
-		modify command processformsbaseclass.prg nowait
 	case selectedBar = 9
-		modify command processformssubclassedgrid.prg nowait
+		modify command processformsbaseclass.prg nowait
 	case selectedBar = 10
+		modify command processformssubclassedgrid.prg nowait
+	case selectedBar = 11
 		modify command processtoupdatememberclassofgrid.prg nowait
 	OTHERWISE 
 		MESSAGEBOX("Not Implemented", 0, "Developer Menu", 3000)
