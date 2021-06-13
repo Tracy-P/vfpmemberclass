@@ -22,7 +22,7 @@ DEFINE CLASS ProcessClassBase as Custom
       hasChange = .F.
       FOR ii = 1 TO lineCount
          IF lineArray[ii] = "Column" AND (not lineArray[ii] = this.baseColumnClass) AND (not lineArray[ii] = "ColumnCount")
-            output = output + STRTRAN(lineArray[ii], "Column", this.baseColumnClass)
+            output = output + STRTRAN(lineArray[ii], "Column", this.baseColumnClass, -1, 1, 1)
             hasChange = .T.
          ELSE
             output = output + lineArray[ii]
