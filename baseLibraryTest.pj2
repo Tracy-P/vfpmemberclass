@@ -71,7 +71,7 @@ ENDWITH
 
 WITH loProject
 	*<ProjectProperties>
-	.SetMain(lcCurdir + 'baselibrary.vcx')
+	.SetMain(lcCurdir + 'main.prg')
 	.Debug = .T.
 	.Encrypted = .F.
 	*<.CmntStyle = 1 />
