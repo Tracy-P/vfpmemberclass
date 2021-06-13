@@ -27,11 +27,11 @@ DEFINE CLASS ProcessClassLibraryBaseGrid as ProcessClassBase OF ProcessClassBase
       LOCAL controlPath
       controlPath = ALLTRIM(csrLibrary.parent) + "." + ALLTRIM(csrLibrary.Objname) + "."
       IF this.UpdateGridProperties()
-         this.AddToCheckMethodsArray(csrLibrary.parent, csrLibrary.objName)
-         SKIP 1 IN csrLibrary
-         SCAN REST WHILE ALLTRIM(csrLibrary.Parent) = controlPath
-            this.UpdateGridMember(controlpath)
-         ENDSCAN 
+*!*	         this.AddToCheckMethodsArray(csrLibrary.parent, csrLibrary.objName)
+*!*	         SKIP 1 IN csrLibrary
+*!*	         SCAN REST WHILE ALLTRIM(csrLibrary.Parent) = controlPath
+*!*	            this.UpdateGridMember(controlpath)
+*!*	         ENDSCAN 
       ENDIF 
    ENDFUNC 
    

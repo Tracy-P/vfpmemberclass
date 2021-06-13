@@ -31,10 +31,10 @@ DEFINE CLASS ProcessFormsBaseClass as ProcessClassBase OF ProcessClassBase.prg
       LOCAL controlPath
       controlPath = ALLTRIM(csrLibrary.Parent) + "." + ALLTRIM(csrLibrary.Objname) + "."
       IF this.UpdateGridProperties()
-         SKIP 1 IN csrLibrary
-         SCAN REST WHILE ALLTRIM(csrLibrary.Parent) = controlPath
-            this.UpdateGridMember(controlPath)
-         ENDSCAN 
+*!*	         SKIP 1 IN csrLibrary
+*!*	         SCAN REST WHILE ALLTRIM(csrLibrary.Parent) = controlPath
+*!*	            this.UpdateGridMember(controlPath)
+*!*	         ENDSCAN 
       ENDIF 
    ENDFUNC    
 
