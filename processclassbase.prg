@@ -21,7 +21,7 @@ DEFINE CLASS ProcessClassBase as Custom
       lineCount = ALINES("lineArray", csrLibrary.Properties)
       hasChange = .F.
       FOR ii = 1 TO lineCount
-         IF lineArray[ii] = "Column" AND ".Name" $ lineArray[ii] AND (not lineArray[ii] = this.baseColumnClass)
+         IF lineArray[ii] = "Column" AND (not lineArray[ii] = this.baseColumnClass) AND (not lineArray[ii] = "ColumnCount")
             output = output + STRTRAN(lineArray[ii], "Column", this.baseColumnClass)
             hasChange = .T.
          ELSE
